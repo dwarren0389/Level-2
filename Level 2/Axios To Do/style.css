@@ -1,0 +1,115 @@
+ *, *:before, *:after {
+    box-sizing: border-box
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+}
+
+.new-post {
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+/*************** layout *****************/
+ .list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: blue;
+ }
+ .todo-details {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border-radius: 50px;
+ }
+.todo-img {
+    height: 10em;
+    width: 10em;
+    border-radius: 50px;
+}
+.todo-right {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border-radius: 50px;
+}
+details {
+    display: inline;
+    transition: .5s linear;
+    overflow: hidden;
+    border-radius: 50px;
+ }
+details:not([open]){
+    height: 1.5em;
+}
+details[open]{
+    height: 11.5em;
+}
+.todo-completed {
+    text-decoration: line-through;
+}
+.todo-container > * {
+    display: inline-block;
+    border: 2px solid blue;
+    margin: 2px;
+    border-radius: 50px;
+}
+.todo-container > span {
+    padding-left:16px;
+    border-radius: 50px;
+}
+.todo-container > input {
+    margin-top:7px;
+    border-radius: 50px;
+}
+.todo-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+}
+
+.todo-container {
+    max-width: 500px;
+    margin: auto;
+}
+.delete-button, .edit-button{
+    height: 24px;
+    color: blue;
+    border-radius: 50px;
+}
+dialog {
+
+    border-radius: 50px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 24px;
+    max-width: 90%;
+    min-width: 75%;
+    min-height: 400px;
+    color: blue;
+}
+dialog form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+}
+dialog input {
+    width: 100%;
+    margin: 5px auto;
+}
+dialog button {
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+}
+.new-post-description {
+    min-height: 100px;
+}

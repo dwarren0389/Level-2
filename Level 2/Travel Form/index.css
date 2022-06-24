@@ -1,0 +1,17 @@
+h1 {
+    /* margin: 10vh 0 5vh 40vw; */
+    background-color: red;
+    text-align: center;
+}
+
+p {
+    margin: 10vh 0 5vh 40vw;
+}
+
+form {
+    margin: 0 0 5vh 40vw;
+}
+
+body {
+    background-color: burlywood;
+}
